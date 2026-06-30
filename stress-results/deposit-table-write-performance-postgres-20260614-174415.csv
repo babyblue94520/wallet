@@ -1,0 +1,9 @@
+scenario,tableName,threads,totalOps,durationMs,tps,success,otherErrors,insertMinMs,insertMidMs,insertMaxMs,insertAvgMs,rowCount
+"deposit_record Table Write Performance","deposit_record",10,100000,9040,11061.23,100000,0,1,1,40,1.00,100000
+"deposit_record Table Write Performance","deposit_record",50,100000,3012,33199.17,100000,0,1,1,57,1.13,100000
+"deposit_record Table Write Performance","deposit_record",200,100000,3009,33229.35,100000,0,1,2,341,4.42,100000
+"deposit_record Table Write Performance","deposit_record",500,100000,3396,29442.83,100000,0,1,5,453,13.63,100000
+"deposit_record2 Table Write Performance","deposit_record2",10,100000,13105,7630.65,100000,0,1,1,50,1.06,100000
+"deposit_record2 Table Write Performance","deposit_record2",50,100000,2585,38669.92,100000,0,1,1,10,1.03,100000
+"deposit_record2 Table Write Performance","deposit_record2",200,100000,3418,29252.13,100000,0,1,4,51,5.98,100000
+"deposit_record2 Table Write Performance","deposit_record2",500,100000,3501,28556.93,100000,0,1,8,405,14.44,100000

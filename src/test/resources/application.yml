@@ -1,0 +1,23 @@
+spring:
+  data:
+    redis:
+      host: ${test.host}
+      lettuce:
+        pool:
+          max-active: 1000
+      repositories:
+        enabled: false
+  datasource:
+    hikari:
+      pool-name: app-hikari-pool
+      maximum-pool-size: 5000
+      transaction-isolation: TRANSACTION_READ_COMMITTED
+      auto-commit: true
+      minimum-idle: 10
+    tomcat:
+      default-auto-commit: true
+
+test:
+  host: 169.254.84.181
+  user: root
+  password: root

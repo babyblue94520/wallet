@@ -1,0 +1,52 @@
+init accounts [ 310 ms ]
+=== RowLock BATCH_CASH_IN batchSize=100 accounts=2 totalOps=100000 (threads 100) ===
+accounts=2, threads=100, totalOps=100000
+duration=34501 ms, tps=2898.43
+insertMs min=55, mid=63, max=136, avg=64.94
+updateBalanceMs min=1, mid=1, max=3, avg=1.00
+directMs min=194, mid=3258, max=4544, avg=3244.38
+findMs min=1, mid=1, max=1, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=0, operationTimeout=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=0
+init accounts [ 50 ms ]
+=== RowLock BATCH_CASH_IN batchSize=1000 accounts=2 totalOps=100000 (threads 100) ===
+accounts=2, threads=100, totalOps=100000
+duration=33606 ms, tps=2975.66
+insertMs min=569, mid=629, max=983, avg=649.95
+updateBalanceMs min=1, mid=1, max=1, avg=1.00
+directMs min=993, mid=17422, max=33605, avg=17122.83
+findMs min=1, mid=1, max=1, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=0, operationTimeout=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=0
+init accounts [ 729 ms ]
+=== RowLock BATCH_CASH_IN batchSize=100 accounts=10000 totalOps=500000 (threads 500) ===
+accounts=10000, threads=500, totalOps=500000
+duration=15534 ms, tps=32185.48
+insertMs min=54, mid=1418, max=3017, avg=1411.07
+updateBalanceMs min=1, mid=1, max=185, avg=3.68
+directMs min=59, mid=1482, max=3777, avg=1484.27
+findMs min=1, mid=1, max=187, avg=3.70
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=500000, insufficientBalance=0, operationTimeout=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=0
+init accounts [ 820 ms ]
+=== RowLock BATCH_CASH_IN batchSize=1000 accounts=10000 totalOps=500000 (threads 500) ===
+accounts=10000, threads=500, totalOps=500000
+duration=15330 ms, tps=32614.68
+insertMs min=534, mid=14295, max=14795, avg=13826.32
+updateBalanceMs min=1, mid=3, max=107, avg=9.52
+directMs min=12447, mid=14433, max=15326, avg=14343.81
+findMs min=1, mid=5, max=117, avg=15.53
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=500000, insufficientBalance=0, operationTimeout=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=0

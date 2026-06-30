@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: wallet
+  datasource:
+    url: ${WALLET_DB_URL:jdbc:mysql://localhost:3306/test?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
+    username: ${WALLET_DB_USER:root}
+    password: ${WALLET_DB_PASS:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+

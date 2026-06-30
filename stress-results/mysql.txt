@@ -1,0 +1,321 @@
+=== RowLock CASH accounts=2 totalOps=10000 (threads 20) ===
+accounts=2, threads=20, totalOps=10000
+duration=13260 ms, tps=754.12
+insertMs min=1, mid=1, max=22, avg=1.00
+updateBalanceMs min=1, mid=21, max=92, avg=21.61
+directMs min=3, mid=25, max=98, avg=25.51
+findMs min=1, mid=1, max=4, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=10000, insufficientBalance=134, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=1.34%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock CASH accounts=2 totalOps=10000 (threads 200) ===
+accounts=2, threads=200, totalOps=10000
+duration=12306 ms, tps=812.57
+insertMs min=1, mid=1, max=19, avg=1.00
+updateBalanceMs min=1, mid=158, max=432, avg=169.08
+directMs min=3, mid=200, max=1701, avg=220.63
+findMs min=1, mid=1, max=2, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=10000, insufficientBalance=5, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.05%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock CASH accounts=2 totalOps=10000 (threads 500) ===
+accounts=2, threads=500, totalOps=10000
+duration=12419 ms, tps=805.17
+insertMs min=1, mid=1, max=26, avg=1.00
+updateBalanceMs min=1, mid=401, max=864, avg=407.36
+directMs min=4, mid=501, max=3235, avg=553.45
+findMs min=1, mid=1, max=8, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=10000, insufficientBalance=94, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.94%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+init accounts [ 938 ms ]
+=== RowLock CASH accounts=10000 totalOps=100000 (threads 20) ===
+accounts=10000, threads=20, totalOps=100000
+duration=25289 ms, tps=3954.22
+insertMs min=1, mid=1, max=21, avg=1.00
+updateBalanceMs min=1, mid=1, max=11, avg=1.00
+directMs min=2, mid=4, max=30, avg=4.44
+findMs min=1, mid=1, max=7, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock CASH accounts=10000 totalOps=100000 (threads 200) ===
+accounts=10000, threads=200, totalOps=100000
+duration=10479 ms, tps=9542.20
+insertMs min=1, mid=1, max=49, avg=2.26
+updateBalanceMs min=1, mid=1, max=39, avg=1.93
+directMs min=3, mid=19, max=74, avg=20.01
+findMs min=1, mid=1, max=31, avg=1.94
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock CASH accounts=10000 totalOps=100000 (threads 500) ===
+accounts=10000, threads=500, totalOps=100000
+duration=11141 ms, tps=8975.35
+insertMs min=1, mid=4, max=137, avg=7.98
+updateBalanceMs min=1, mid=2, max=131, avg=4.46
+directMs min=3, mid=52, max=208, avg=53.87
+findMs min=1, mid=2, max=70, avg=4.18
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+init accounts [ 938 ms ]
+=== RowLock CASH accounts=10000 totalOps=5000000 (threads 1000) ===
+accounts=10000, threads=1000, totalOps=5000000
+duration=616193 ms, tps=8114.33
+insertMs min=1, mid=10, max=479, avg=24.15
+updateBalanceMs min=1, mid=3, max=534, avg=9.09
+directMs min=3, mid=115, max=1327, avg=122.28
+findMs min=1, mid=3, max=330, avg=6.81
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=5000000, insufficientBalance=48456, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.97%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+init accounts [ 285 ms ]
+=== RedisLock CASH accounts=2 totalOps=10000 (threads 20) ===
+accounts=2, threads=20, totalOps=10000
+duration=39661 ms, tps=241.87
+insertMs min=1, mid=1, max=20, avg=1.00
+updateBalanceMs min=1, mid=1, max=11, avg=1.00
+directMs min=4, mid=35, max=982, avg=64.30
+findMs min=1, mid=1, max=1, avg=1.00
+getLockMs min=1, mid=10, max=431, avg=24.75
+redisTotalMs min=2, mid=13, max=837, avg=39.84
+success=9593, insufficientBalance=0, lockRetryExceeded=407, otherErrors=0
+successRatio=95.93%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=4.07%, otherErrorsRatio=0.00%
+retries=7397, retryExceeded=407
+=== RedisLock CASH accounts=2 totalOps=10000 (threads 200) ===
+accounts=2, threads=200, totalOps=10000
+duration=35844 ms, tps=268.47
+insertMs min=1, mid=1, max=22, avg=1.00
+updateBalanceMs min=1, mid=1, max=12, avg=1.00
+directMs min=4, mid=361, max=7674, avg=565.88
+findMs min=1, mid=1, max=4, avg=1.00
+getLockMs min=1, mid=266, max=4635, avg=324.08
+redisTotalMs min=2, mid=345, max=7546, avg=539.62
+success=9623, insufficientBalance=0, lockRetryExceeded=377, otherErrors=0
+successRatio=96.23%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=3.77%, otherErrorsRatio=0.00%
+retries=8247, retryExceeded=377
+=== RedisLock CASH accounts=2 totalOps=10000 (threads 500) ===
+accounts=2, threads=500, totalOps=10000
+duration=34175 ms, tps=279.77
+insertMs min=1, mid=1, max=21, avg=1.00
+updateBalanceMs min=1, mid=1, max=10, avg=1.00
+directMs min=4, mid=891, max=11095, avg=1296.41
+findMs min=1, mid=1, max=16, avg=1.00
+getLockMs min=1, mid=777, max=6588, avg=757.34
+redisTotalMs min=2, mid=875, max=10974, avg=1270.17
+success=9561, insufficientBalance=0, lockRetryExceeded=439, otherErrors=0
+successRatio=95.61%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=4.39%, otherErrorsRatio=0.00%
+retries=8120, retryExceeded=439
+init accounts [ 974 ms ]
+=== RedisLock CASH accounts=10000 totalOps=100000 (threads 20) ===
+accounts=10000, threads=20, totalOps=100000
+duration=34110 ms, tps=2931.62
+insertMs min=1, mid=1, max=20, avg=1.00
+updateBalanceMs min=1, mid=1, max=6, avg=1.00
+directMs min=3, mid=6, max=56, avg=6.15
+findMs min=1, mid=1, max=7, avg=1.00
+getLockMs min=1, mid=1, max=13, avg=1.00
+redisTotalMs min=2, mid=2, max=18, avg=2.00
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=113, retryExceeded=0
+=== RedisLock CASH accounts=10000 totalOps=100000 (threads 200) ===
+accounts=10000, threads=200, totalOps=100000
+duration=14440 ms, tps=6924.75
+insertMs min=1, mid=1, max=46, avg=2.26
+updateBalanceMs min=1, mid=1, max=29, avg=1.98
+directMs min=4, mid=27, max=157, avg=27.59
+findMs min=1, mid=1, max=41, avg=2.12
+getLockMs min=1, mid=3, max=47, avg=3.23
+redisTotalMs min=2, mid=6, max=62, avg=6.34
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=833, retryExceeded=0
+=== RedisLock CASH accounts=10000 totalOps=100000 (threads 500) ===
+accounts=10000, threads=500, totalOps=100000
+duration=14741 ms, tps=6783.53
+insertMs min=1, mid=1, max=105, avg=5.45
+updateBalanceMs min=1, mid=1, max=74, avg=3.58
+directMs min=4, mid=68, max=351, avg=71.28
+findMs min=1, mid=1, max=80, avg=3.86
+getLockMs min=1, mid=12, max=190, avg=12.15
+redisTotalMs min=2, mid=23, max=204, avg=23.27
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=1536, retryExceeded=0
+init accounts [ 804 ms ]
+=== RedisLock CASH accounts=10000 totalOps=5000000 (threads 1000) ===
+accounts=10000, threads=1000, totalOps=5000000
+duration=786415 ms, tps=6295.17
+insertMs min=1, mid=2, max=590, avg=12.11
+updateBalanceMs min=1, mid=1, max=464, avg=4.89
+directMs min=4, mid=147, max=1066, avg=155.11
+findMs min=1, mid=1, max=393, avg=5.35
+getLockMs min=1, mid=33, max=833, avg=34.32
+redisTotalMs min=2, mid=65, max=875, avg=65.27
+success=4950616, insufficientBalance=0, lockRetryExceeded=49384, otherErrors=0
+successRatio=99.01%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.99%, otherErrorsRatio=0.00%
+retries=106931, retryExceeded=49384
+init accounts [ 338 ms ]
+=== RowLock TRANSFER accounts=10 totalOps=10000 (threads 20) ===
+accounts=10, threads=20, totalOps=10000
+duration=27058 ms, tps=369.57
+insertMs min=1, mid=1, max=24, avg=1.00
+updateBalanceMs min=1, mid=1, max=9, avg=1.00
+directMs min=5, mid=43, max=223, avg=51.73
+findMs min=1, mid=1, max=8, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=10000, insufficientBalance=505, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=5.05%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock TRANSFER accounts=10 totalOps=10000 (threads 200) ===
+accounts=10, threads=200, totalOps=10000
+duration=30249 ms, tps=330.59
+insertMs min=1, mid=1, max=26, avg=1.00
+updateBalanceMs min=1, mid=1, max=7, avg=1.00
+directMs min=5, mid=328, max=2126, avg=541.71
+findMs min=1, mid=1, max=2, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=10000, insufficientBalance=503, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=5.03%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock TRANSFER accounts=10 totalOps=10000 (threads 500) ===
+accounts=10, threads=500, totalOps=10000
+duration=24050 ms, tps=415.78
+insertMs min=1, mid=1, max=26, avg=1.00
+updateBalanceMs min=1, mid=1, max=11, avg=1.00
+directMs min=5, mid=1045, max=3048, avg=1082.23
+findMs min=1, mid=1, max=11, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=10000, insufficientBalance=441, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=4.41%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+init accounts [ 966 ms ]
+=== RowLock TRANSFER accounts=10000 totalOps=100000 (threads 20) ===
+accounts=10000, threads=20, totalOps=100000
+duration=36330 ms, tps=2752.49
+insertMs min=1, mid=1, max=26, avg=1.00
+updateBalanceMs min=1, mid=1, max=26, avg=1.00
+directMs min=4, mid=7, max=35, avg=6.60
+findMs min=1, mid=1, max=26, avg=1.00
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=6, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.01%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock TRANSFER accounts=10000 totalOps=100000 (threads 200) ===
+accounts=10000, threads=200, totalOps=100000
+duration=18700 ms, tps=5347.55
+insertMs min=1, mid=1, max=74, avg=2.64
+updateBalanceMs min=1, mid=1, max=65, avg=2.40
+directMs min=4, mid=35, max=151, avg=36.17
+findMs min=1, mid=1, max=49, avg=2.22
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=2, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+=== RowLock TRANSFER accounts=10000 totalOps=100000 (threads 500) ===
+accounts=10000, threads=500, totalOps=100000
+duration=20202 ms, tps=4949.84
+insertMs min=1, mid=4, max=253, avg=8.56
+updateBalanceMs min=1, mid=3, max=147, avg=5.12
+directMs min=5, mid=93, max=499, avg=97.65
+findMs min=1, mid=3, max=137, avg=4.71
+getLockMs min=0, mid=0, max=0, avg=0.00
+redisTotalMs min=0, mid=0, max=0, avg=0.00
+success=100000, insufficientBalance=1, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, retryExceeded=0
+init accounts [ 77 ms ]
+=== RedisLock TRANSFER accounts=10 totalOps=10000 (threads 20) ===
+accounts=10, threads=20, totalOps=10000
+duration=38066 ms, tps=252.11
+insertMs min=1, mid=1, max=21, avg=1.00
+updateBalanceMs min=1, mid=1, max=3, avg=1.00
+directMs min=7, mid=40, max=882, avg=67.96
+findMs min=1, mid=1, max=6, avg=1.00
+getLockMs min=1, mid=1, max=591, avg=15.12
+redisTotalMs min=4, mid=18, max=818, avg=48.59
+success=9597, insufficientBalance=0, lockRetryExceeded=403, otherErrors=0
+successRatio=95.97%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=4.03%, otherErrorsRatio=0.00%
+retries=4514, retryExceeded=403
+=== RedisLock TRANSFER accounts=10 totalOps=10000 (threads 200) ===
+accounts=10, threads=200, totalOps=10000
+duration=45117 ms, tps=211.98
+insertMs min=1, mid=1, max=25, avg=1.00
+updateBalanceMs min=1, mid=1, max=6, avg=1.00
+directMs min=7, mid=46, max=19215, avg=650.42
+findMs min=1, mid=1, max=3, avg=1.00
+getLockMs min=1, mid=1, max=8020, avg=205.70
+redisTotalMs min=4, mid=21, max=19146, avg=628.75
+success=9564, insufficientBalance=0, lockRetryExceeded=436, otherErrors=0
+successRatio=95.64%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=4.36%, otherErrorsRatio=0.00%
+retries=4567, retryExceeded=436
+=== RedisLock TRANSFER accounts=10 totalOps=10000 (threads 500) ===
+accounts=10, threads=500, totalOps=10000
+duration=43309 ms, tps=221.59
+insertMs min=1, mid=1, max=21, avg=1.00
+updateBalanceMs min=1, mid=1, max=3, avg=1.00
+directMs min=8, mid=47, max=32122, avg=1498.90
+findMs min=1, mid=1, max=4, avg=1.00
+getLockMs min=1, mid=1, max=8037, avg=514.84
+redisTotalMs min=4, mid=20, max=31978, avg=1478.33
+success=9597, insufficientBalance=0, lockRetryExceeded=403, otherErrors=0
+successRatio=95.97%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=4.03%, otherErrorsRatio=0.00%
+retries=4649, retryExceeded=403
+init accounts [ 865 ms ]
+=== RedisLock TRANSFER accounts=10000 totalOps=100000 (threads 20) ===
+accounts=10000, threads=20, totalOps=100000
+duration=53718 ms, tps=1861.53
+insertMs min=1, mid=1, max=21, avg=1.00
+updateBalanceMs min=1, mid=1, max=7, avg=1.00
+directMs min=6, mid=10, max=83, avg=9.91
+findMs min=1, mid=1, max=7, avg=1.00
+getLockMs min=1, mid=1, max=10, avg=1.00
+redisTotalMs min=4, mid=4, max=21, avg=4.00
+success=99999, insufficientBalance=0, lockRetryExceeded=1, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=382, retryExceeded=1
+=== RedisLock TRANSFER accounts=10000 totalOps=100000 (threads 200) ===
+accounts=10000, threads=200, totalOps=100000
+duration=26164 ms, tps=3821.80
+insertMs min=1, mid=1, max=51, avg=1.89
+updateBalanceMs min=1, mid=1, max=46, avg=1.96
+directMs min=7, mid=48, max=304, avg=50.30
+findMs min=1, mid=1, max=38, avg=1.97
+getLockMs min=1, mid=4, max=105, avg=4.25
+redisTotalMs min=4, mid=17, max=130, avg=17.07
+success=99997, insufficientBalance=0, lockRetryExceeded=3, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=2963, retryExceeded=3
+=== RedisLock TRANSFER accounts=10000 totalOps=100000 (threads 500) ===
+accounts=10000, threads=500, totalOps=100000
+duration=28099 ms, tps=3558.80
+insertMs min=1, mid=1, max=115, avg=3.22
+updateBalanceMs min=1, mid=1, max=101, avg=3.39
+directMs min=8, mid=123, max=964, avg=134.64
+findMs min=1, mid=1, max=98, avg=3.25
+getLockMs min=1, mid=14, max=497, avg=15.96
+redisTotalMs min=4, mid=57, max=690, avg=63.21
+success=100000, insufficientBalance=0, lockRetryExceeded=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, lockRetryExceededRatio=0.00%, otherErrorsRatio=0.00%
+retries=6540, retryExceeded=0

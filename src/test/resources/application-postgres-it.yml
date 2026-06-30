@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${test.host}:5432/test
+    username: ${test.user:root}
+    password: ${test.password:root}
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema-postgres.sql

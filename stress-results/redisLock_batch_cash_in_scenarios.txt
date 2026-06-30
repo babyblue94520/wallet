@@ -1,0 +1,52 @@
+init accounts [ 105 ms ]
+=== RedisLock BATCH_CASH_IN batchSize=100 accounts=2 totalOps=100000 (threads 100) ===
+accounts=2, threads=100, totalOps=100000
+duration=36758 ms, tps=2685.11
+insertMs min=54, mid=61, max=136, avg=63.71
+updateBalanceMs min=1, mid=1, max=5, avg=1.00
+directMs min=60, mid=3528, max=8117, avg=2990.97
+findMs min=1, mid=1, max=1, avg=1.00
+getLockMs min=1, mid=3463, max=8015, avg=2984.40
+redisTotalMs min=2, mid=3464, max=8015, avg=2985.42
+success=98700, insufficientBalance=0, operationTimeout=1300, otherErrors=0
+successRatio=98.70%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=1.30%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=13
+init accounts [ 80 ms ]
+=== RedisLock BATCH_CASH_IN batchSize=1000 accounts=2 totalOps=100000 (threads 100) ===
+accounts=2, threads=100, totalOps=100000
+duration=8617 ms, tps=2785.05
+insertMs min=625, mid=657, max=890, avg=709.38
+updateBalanceMs min=1, mid=1, max=1, avg=1.00
+directMs min=725, mid=4699, max=8616, avg=4461.58
+findMs min=1, mid=1, max=1, avg=1.00
+getLockMs min=1, mid=8005, max=8006, avg=7043.30
+redisTotalMs min=2, mid=8005, max=8006, avg=7043.53
+success=24000, insufficientBalance=0, operationTimeout=76000, otherErrors=0
+successRatio=24.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=76.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=76
+init accounts [ 862 ms ]
+=== RedisLock BATCH_CASH_IN batchSize=100 accounts=10000 totalOps=500000 (threads 500) ===
+accounts=10000, threads=500, totalOps=500000
+duration=15757 ms, tps=31730.92
+insertMs min=64, mid=1438, max=2886, avg=1427.84
+updateBalanceMs min=1, mid=1, max=64, avg=2.38
+directMs min=71, mid=1503, max=4349, avg=1510.74
+findMs min=1, mid=1, max=63, avg=2.21
+getLockMs min=1, mid=1, max=2933, avg=26.27
+redisTotalMs min=2, mid=2, max=2934, avg=27.34
+success=500000, insufficientBalance=0, operationTimeout=0, otherErrors=0
+successRatio=100.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=0.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=0
+init accounts [ 851 ms ]
+=== RedisLock BATCH_CASH_IN batchSize=1000 accounts=10000 totalOps=500000 (threads 500) ===
+accounts=10000, threads=500, totalOps=500000
+duration=14649 ms, tps=33449.17
+insertMs min=11908, mid=14155, max=14585, avg=14020.43
+updateBalanceMs min=1, mid=5, max=121, avg=8.62
+directMs min=12018, mid=14258, max=14647, avg=14128.74
+findMs min=1, mid=2, max=124, avg=6.96
+getLockMs min=1, mid=22, max=8003, avg=102.83
+redisTotalMs min=1, mid=22, max=8003, avg=102.83
+success=490000, insufficientBalance=0, operationTimeout=10000, otherErrors=0
+successRatio=98.00%, insufficientBalanceRatio=0.00%, operationTimeoutRatio=2.00%, otherErrorsRatio=0.00%
+retries=0, operationTimeoutCount=10
